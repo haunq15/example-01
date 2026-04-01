@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Services;
 
 use App\Repositories\Interfaces\PostRepositoryInterface;
@@ -6,7 +7,6 @@ use App\Repositories\Interfaces\PostRepositoryInterface;
 class PostService
 {
     protected PostRepositoryInterface $postRepo;
-
     public function __construct(PostRepositoryInterface $postRepo)
     {
         $this->postRepo = $postRepo;
